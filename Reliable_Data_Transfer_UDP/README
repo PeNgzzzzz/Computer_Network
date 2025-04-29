@@ -1,0 +1,31 @@
+CS 456 A2
+
+How to run:
+Run the nEmulator first (e.g., on ubuntu2204-006.student.cs.uwaterloo.ca).
+1. Make sure <receiver's network address>, <sender's network address> and port numbers are correct.
+2. Add the permission to execute the program (e.g $ chmod a+x nEmulator).
+3. Execute it (e.g., $ ./nEmulator 9991 ubuntu2204-004.student.cs.uwaterloo.ca 9994 9993 ubuntu2204-002.student.cs.uwaterloo.ca 9992 1 0.2 0).
+
+Then run the receiver (e.g., on ubuntu2204-004.student.cs.uwaterloo.ca).
+1. Make sure <hostname for the network emulator> and port numbers are correct.
+2. Add the permission to execute the source code (e.g $ chmod a+x receiver.py).
+3. Execute it (e.g., $ python3 receiver.py ubuntu2204-006.student.cs.uwaterloo.ca 9993 9994 output.txt).
+
+Finally run the sender (e.g., on ubuntu2204-002.student.cs.uwaterloo.ca).
+1. Make sure <host address of the network emulator> and port numbers are correct.
+2. Make sure <name of the file to be transferred> exists.
+3. Add the permission to execute the source code (e.g $ chmod a+x sender.py).
+4. Execute it (e.g., $ python3 sender.py ubuntu2204-006.student.cs.uwaterloo.ca 9991 9992 50 input.txt).
+
+Testing:
+This program has been tested on my local machine (all of the nEmulator, receiver and sender are running on my local machine).
+This program has been tested in the linux.student.cs environment (
+    1. All of the nEmulator, receiver and sender are running on ubuntu2204-004.student.cs.uwaterloo.ca. 
+    2. The three programs run on separate machines
+    (nEmulator on ubuntu2204-006.student.cs.uwaterloo.ca, 
+    receiver on ubuntu2204-004.student.cs.uwaterloo.ca,
+    sender on ubuntu2204-002.student.cs.uwaterloo.ca).
+).
+
+Version:
+Python 3.10.12
