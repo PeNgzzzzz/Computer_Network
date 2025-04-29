@@ -1,0 +1,23 @@
+CS 456 A1
+
+How to run:
+Run the server first.
+1. Make sure <storage_directory> exists.
+2. Add the permission to execute the script (e.g $ chmod a+x server.sh).
+3. Execute it (e.g $ ./server.sh <storage_directory>).
+
+Then run the client.
+1. Make sure <server address> <n_port> <command> are valid.
+2. Make sure <filename> exists.
+2. Add the permission to execute the script (e.g $ chmod a+x client.sh).
+3. Execute it (e.g $ ./client.sh <server_address> <n_port> <command> <filename>).
+
+Testing:
+This program has been tested on my local machine (both the server and the client are running on my local machine).
+This program has been tested in the linux.student.cs environment (
+    1. Both the server and the client are running on ubuntu2204-002.student.cs.uwaterloo.ca. 
+    2. The server is running on ubuntu2204-002.student.cs.uwaterloo.ca while the client is running on ubuntu2204-004.student.cs.uwaterloo.ca
+)
+
+Version:
+Python 3.10.12
