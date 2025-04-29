@@ -1,5 +1,3 @@
-CS 456 A2
-
 How to run:
 Run the nEmulator first (e.g., on ubuntu2204-006.student.cs.uwaterloo.ca).
 1. Make sure <receiver's network address>, <sender's network address> and port numbers are correct.
